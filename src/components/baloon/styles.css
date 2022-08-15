@@ -1,0 +1,29 @@
+.baloons{
+    width: 400px;
+    height: 400px;
+    margin-top: 300px;
+}
+
+.b1{
+    margin-top: 100px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: var(--vermelho);
+}
+
+.b1{
+    margin-top: 100px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: var(--vermelho);
+}
+
+.b1{
+    margin-top: 100px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: var(--vermelho); 
+}
