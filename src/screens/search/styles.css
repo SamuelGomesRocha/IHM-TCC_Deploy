@@ -7,6 +7,13 @@
 }
 
 
+.search-title{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
 .search-input{
     color: #fff;
     font-size: 1rem;

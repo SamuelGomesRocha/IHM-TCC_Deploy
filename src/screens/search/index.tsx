@@ -7,6 +7,7 @@ import Modal from 'react-modal'
 import { KeysModal } from '../../components/keys-modal'
 import { useEffect, useState } from 'react'
 import { Baloon } from '../../components/baloon'
+import Typewriter from "typewriter-effect"
 
 
 Modal.setAppElement('#root')
@@ -29,6 +30,60 @@ export function Search(){
 
         <div className="search-container">
             
+            <div className='search-nav' style={{
+                marginTop: '-3%',
+                width: "100%",
+                display:"flex",
+                flexDirection: "row",
+                alignContent: "space-between",
+            }}>
+            <h1 style={{fontFamily: "Ubuntu", color:"var(--verde)", fontSize: "42px"}}>
+                <Typewriter
+                    options={{
+                        strings: ['42'],
+                        autoStart: true,
+                        loop: true
+                    }}
+                />
+                </h1>
+                <h1 style={{fontFamily: "Ubuntu", color:"var(--vermelho)", fontSize: "12px",
+                        marginTop:"4%", marginLeft:"1%"
+                    }}>
+                <Typewriter
+                    options={{
+                        strings: ['a vida, o universo e tudo mais.'
+                        ],
+                        autoStart: true,
+                        loop: true
+                    }}
+                />
+                </h1>
+            </div>
+
+            <div className='search-title' style={{
+                marginBottom: "-21%",
+                marginTop: "8%",
+                display: "flex"
+            }}> 
+                <h1
+                    style={{color:"var(--verde)", marginBottom:'-5%'}}
+                >recupere os sentimentos inerentes a</h1>
+                <h1 style={{fontFamily: "Ubuntu", color:"var(--laranja)"}}>
+                <Typewriter
+                    options={{
+                        strings: ['PESSOAS',
+                          'NOMES', 'COISAS',
+                          'IDEIAS', 'LOCAIS',
+                          'EVENTOS', 'EMPREENDIMENTOS'  
+                        ],
+                        autoStart: true,
+                        loop: true
+                    }}
+                />
+                </h1>
+            </div>
+
+
             <input className='search-input' 
             style={{
             backgroundImage: `${backGroundImg}`,
