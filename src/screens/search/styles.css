@@ -29,6 +29,10 @@
     transition: all 0.3s;
 }
 
+[title]{
+    background-color: var(--verde);
+}
+
 .search-input::placeholder{
     color: var(--verde);
 }

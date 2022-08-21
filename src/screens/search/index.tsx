@@ -30,39 +30,10 @@ export function Search(){
 
         <div className="search-container">
             
-            <div className='search-nav' style={{
-                marginTop: '-3%',
-                width: "100%",
-                display:"flex",
-                flexDirection: "row",
-                alignContent: "space-between",
-            }}>
-            <h1 style={{fontFamily: "Ubuntu", color:"var(--verde)", fontSize: "42px"}}>
-                <Typewriter
-                    options={{
-                        strings: ['42'],
-                        autoStart: true,
-                        loop: true
-                    }}
-                />
-                </h1>
-                <h1 style={{fontFamily: "Ubuntu", color:"var(--vermelho)", fontSize: "12px",
-                        marginTop:"4%", marginLeft:"1%"
-                    }}>
-                <Typewriter
-                    options={{
-                        strings: ['a vida, o universo e tudo mais.'
-                        ],
-                        autoStart: true,
-                        loop: true
-                    }}
-                />
-                </h1>
-            </div>
 
             <div className='search-title' style={{
                 marginBottom: "-21%",
-                marginTop: "8%",
+                marginTop: "12%",
                 display: "flex"
             }}> 
                 <h1
@@ -92,10 +63,12 @@ export function Search(){
             backgroundPosition: 'left 8px',
             backgroundPositionX: '10px',
             backgroundColor: 'var(--verde))'}}
+            title="Pesquise algo"
             >    
             </input>
             <div className="search-keys"
                 onClick={handleOpenModal}
+                title="Insira as chaves para se conectar à API do Twitter."
             >
                 <img 
                     src={KeyImage}
