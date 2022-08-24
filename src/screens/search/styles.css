@@ -46,13 +46,13 @@
     justify-content: center;
     width: 30px;
     height: 30px;
-    background-color: var(--verde);
+    border: 1px solid var(--verde);
+    background-color: #fff;
     transition: all 0.3s;
 }
 
 .search-keys:hover{
-    box-shadow: 3px -3px var(--preto);
-    border-top: 1px solid var(--preto);
+    box-shadow: 2px -2px var(--verde);
 }
 
 .search-input:hover{

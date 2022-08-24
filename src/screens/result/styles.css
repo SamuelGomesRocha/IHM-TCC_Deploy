@@ -1,0 +1,91 @@
+.result-header{
+    margin-top: -1%;
+    margin-left: -1%;
+    margin-right: -0.6%;
+    border-bottom: 1px solid var(--verde);
+    background-color: #fff;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.result-cards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 1%;
+}
+
+
+.result-top-cards{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    height: 400px;
+    margin-top: -1%;
+    margin-bottom: 1%;
+    justify-content: space-between;
+}
+
+.sentiment-card-1{
+    width: 49.8%;
+    background-color: var(--verde);
+    height: 400px;
+    border-radius: 20px;
+    margin-top: 2%;
+}
+
+.sentiment-card-2{
+    width: 100%;
+    background-color: var(--verde);
+    height: 400px;
+    border-radius: 20px;
+    margin-top: 2%;
+}
+
+.sentiment-card-title{
+    border-bottom: 1px solid #fff;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h3{
+    font: 'Ubuntu';
+    color: #fff;
+}
+
+.search-input-result{
+    color: #fff;
+    font-size: 1rem;
+    padding: 0.4rem 1rem;
+    padding-left: 30px;
+    margin-top: 1.5%;
+    margin-bottom: 2%;
+    margin-left: 1%;
+    text-align: left;
+    border-radius: 30px;
+    background-color: var(--verde);
+    border: 2px solid var(--verde);
+    width: 30%;
+    display: block;
+    transition: all 0.3s;
+}
+
+.btn-home{
+    margin-top: -0.4%;
+    margin-left: -1%;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    border: 1px solid var(--verde);
+    background-color: var(--verde);
+    transition: all 0.3s;
+}

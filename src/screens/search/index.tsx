@@ -1,6 +1,6 @@
 import TwitterImage from '../../img/twitter_image.png'
 import Lupa from '../../img/search.svg'
-import KeyImage from '../../img/key.ico'
+import KeyImage from '../../img/key_icon.png'
 import IFG from '../../img/ifg.png'
 import './styles.css'
 import Modal from 'react-modal'
@@ -8,11 +8,17 @@ import { KeysModal } from '../../components/keys-modal'
 import { useEffect, useState } from 'react'
 import { Baloon } from '../../components/baloon'
 import Typewriter from "typewriter-effect"
+import { useNavigate } from 'react-router-dom'
 
 
 Modal.setAppElement('#root')
 
 export function Search(){
+
+    const navigate = useNavigate()
+
+
+
 
     const [validateBackgroundImg, setValidateBackgroundImg] = useState<boolean>(true)
     const [backGroundImg, setBackgroundImg] = useState<string>(`url(${Lupa})`)
@@ -64,6 +70,7 @@ export function Search(){
             backgroundPositionX: '10px',
             backgroundColor: 'var(--verde))'}}
             title="Pesquise algo"
+            onKeyDown = {(e) => e.key === "Enter" && navigate("/result")}
             >    
             </input>
             <div className="search-keys"
@@ -72,7 +79,7 @@ export function Search(){
             >
                 <img 
                     src={KeyImage}
-                    style={{width:"20px"}}
+                    style={{width:"25px"}}
                 />
             </div>
 
