@@ -17,9 +17,6 @@ export function Search(){
 
     const navigate = useNavigate()
 
-
-
-
     const [validateBackgroundImg, setValidateBackgroundImg] = useState<boolean>(true)
     const [backGroundImg, setBackgroundImg] = useState<string>(`url(${Lupa})`)
     const [openModal, setOpenModal] = useState<boolean>(false)

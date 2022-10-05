@@ -3,6 +3,7 @@ import Lupa from '../../img/search.svg'
 import { useState } from 'react'
 import { AiOutlineHome } from 'react-icons/ai';
 import { useNavigate } from 'react-router-dom';
+import loading from '../../img/load.gif'
 
 export function ResultScreen(){
 
@@ -46,13 +47,21 @@ export function ResultScreen(){
             
                 <div className='sentiment-card-1'>
                     <div className='sentiment-card-title'>
-                            <h3>Bag of words</h3>
+                            <h3>Vetor de Frequências</h3>
                     </div>
+
+                    <div className='sentiment-card-content'>
+                         <img className='img-loading' src={loading} alt='Loading'/>
+                    </div>
+                    
                 </div>
 
                 <div className='sentiment-card-1'>
                     <div className='sentiment-card-title'>
-                            <h3>Word cloud</h3>
+                            <h3>Análise de Sentimentos</h3>
+                    </div>
+                    <div className='sentiment-card-content'>
+                         <img className='img-loading' src={loading} alt='Loading'/>
                     </div>
                 </div>
             
@@ -61,6 +70,9 @@ export function ResultScreen(){
                    <div className='sentiment-card-title'>
                         <h3>hello, world!</h3>
                    </div>
+                   <div className='sentiment-card-content'>
+                         <img className='img-loading' src={loading} alt='Loading'/>
+                    </div>
             </div>
 
         </div>
